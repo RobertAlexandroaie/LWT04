@@ -3,6 +3,7 @@
 	<name>LWT04</name>
 	<comment></comment>
 	<projects>
+		<project>ServletUtils</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
