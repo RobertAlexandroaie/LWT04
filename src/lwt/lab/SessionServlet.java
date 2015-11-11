@@ -51,11 +51,11 @@ public class SessionServlet extends HttpServlet {
 	}
 
 	private void handleRegularVisitor(HttpServletResponse response) throws IOException {
-	    response.getWriter().append(ResponseUtils.titleAndBodyHTML("LWT04-1", "<p>Welcome back!</p>"));
+	    response.getWriter().append(ResponseUtils.titleBodyStyleHTML("LWT04-1", "<p>Welcome back!</p>", "./css/styles.css"));
 	}
 
 	private void handleNewVisitor(HttpServletResponse response, Cookie cookie) throws IOException {
-	    response.getWriter().append(ResponseUtils.titleAndBodyHTML("LWT04-1", "<p>Welcome!</p>"));
+	    response.getWriter().append(ResponseUtils.titleBodyStyleHTML("LWT04-1", "<p>Welcome!</p>", "./css/styles.css"));
 	    cookie.setValue(REGULAR_VISITOR);
 	    response.addCookie(cookie);
 	}
