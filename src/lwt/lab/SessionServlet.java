@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import lwt.lab.utils.ResponseUtils;
 
-import static lwt.lab.utils.CookiesUtils.*;
+import static lwt.lab.utils.CookieUtilities.*;
 
 /**
  * Servlet implementation class SessionServlet
